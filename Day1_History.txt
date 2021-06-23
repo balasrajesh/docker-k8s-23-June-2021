@@ -113,3 +113,38 @@
   113  ls
   114  history 
   115  history > Day1_History.txt 
+  116  ls
+  117  git add . ; git commit -m "Day1_History.txt" ; git push 
+  118  history 
+  119  docker ps 
+  120  docker ps -l
+  121  docker ps -lq
+  122  docker inspect $(docker ps -lq)
+  123  ls
+  124  cd /var/lib/docker/
+  125  ls
+  126  cd containers/
+  127  ls
+  128  ll
+  129  docker ps 
+  130  cd 23165e876a0b49394674b4bf68bc821fa84fbffd9907a06256991befc0699b62/
+  131  ls
+  132  cat host
+  133  cat hostname 
+  134  cat resolv.conf
+  135  cat hosts 
+  136  ls
+  137  cd ..
+  138  cd 
+  139  ls
+  140  docker ps 
+  141  docker exec -it 23165e876a0b ls -ltr 
+  142  docker exec -it 23165e876a0b cat app.py
+  143  ls
+  144  docker ps 
+  145  docker exec -it 8046442397ab ls -ltr 
+  146  docker exec -it 8046442397ab cat hello.txt
+  147  ls
+  148  cd docker-k8s-23-June-2021/
+  149  ls
+  150  history > Day1_History.txt 
