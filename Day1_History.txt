@@ -32,18 +32,84 @@
    32  ls
    33  exit 
    34  ls
-   35  history 
-   36  docker ps 
-   37  docker ps -a
-   38  docker images 
-   39  docker pull centos
-   40  docker images 
-   41  docker pull amitvashist7/python-webapp:v1
-   42  docker images 
-   43  docker pull amitvashist7/apache-ex4
-   44  docker login 
-   45  docker pull amitvashist7/apache-ex4
-   46  ls
-   47  cd docker-k8s-23-June-2021/
-   48  ls
-   49  history > Day1_History.txt 
+   35  cd docker-k8s-23-June-2021/
+   36  ls
+   37  git pull
+   38  ls
+   39  cd 01-Docker/
+   40  ls
+   41  cd 00-Setup/
+   42  ls
+   43  cd 
+   44  ls
+   45  docker images 
+   46  docker ps 
+   47  docker container ;s 
+   48  docker container ls
+   49  docker ps 
+   50  docker container ls
+   51  docker images 
+   52  docker run busybox echo "Welcome to Docker Containers"
+   53  docker images 
+   54  docker ps 
+   55  docker ps -a
+   56  docker run busybox echo "Hello World"
+   57  docker ps
+   58  docker ps -a 
+   59  docker run busybox --name test-1 echo "Hello World"
+   60  docker run --name test-2 busybox echo "Hello World"
+   61  docker ps 
+   62  docker ps -a
+   63  docker run --name test-3 ubuntu echo "Hello World"
+   64  docker images 
+   65  ls
+   66  history 
+   67  ls
+   68  cd docker-k8s-23-June-2021/
+   69  ls
+   70  git rm hello.txt 
+   71  history > Day1_History.txt
+   72  git add . ; git commit -m "Day1_History.txt" ; git pusj 
+   73  git add . ; git commit -m "Day1_History.txt" ; git push 
+   74  exit
+   75  docker ps 
+   76  docker ps -a
+   77  docker images 
+   78  docker run -it ubuntu
+   79  docker ps 
+   80  docker run -it ubuntu /bin/sh
+   81  docker ps 
+   82  docker ps -a
+   83  docker ps 
+   84  docker stop 8046442397ab
+   85  docker ps 
+   86  docker ps 0a
+   87  docker ps -a
+   88  docker start 8046442397ab
+   89  docker ps 
+   90  docker attach 8046442397ab
+   91  docker ps 
+   92  docker attach 8046442397ab
+   93  docker ps 
+   94  docker ps -a
+   95  docker start 8046442397ab
+   96  docker ps 
+   97  docker start test-3
+   98  docker ps 
+   99  docker ps -a
+  100  docker rm test-3
+  101  docker ps -a
+  102  ls
+  103  docker run -it centos 
+  104  docker ps 
+  105  docker run -itd centos 
+  106  docker ps 
+  107  ls
+  108  docker images 
+  109  docker run -d amitvashist7/python-webapp:v1
+  110  docker ps 
+  111  ls
+  112  cd docker-k8s-23-June-2021/
+  113  ls
+  114  history 
+  115  history > Day1_History.txt 
