@@ -1,0 +1,71 @@
+    1  ls
+    2  git clone 
+    3  git clone https://github.com/amitvashisttech/docker-k8s-23-June-2021.git
+    4  ls
+    5  cd docker-k8s-23-June-2021/
+    6  ls
+    7  mkdir 01-Docker
+    8  ls
+    9  mkdir 00-Setup
+   10  vim 00-Setup/install-docker.sh
+   11  ls
+   12  chmod +x 00-Setup/install-docker.sh 
+   13  ls
+   14  mv 00-Setup 01-Docker/
+   15  ls
+   16  git config credential.helper store
+   17  git add . 
+   18  git commit -m "01-Docker"
+   19  git config --global --edit
+   20  git commit -m "01-Docker"
+   21  git push 
+   22  ls
+   23  cd 01-Docker/
+   24  ls
+   25  cd 00-Setup/
+   26  ls
+   27  ./install-docker.sh 
+   28  docker version 
+   29  cd 
+   30  ls
+   31  cd docker-k8s-23-June-2021/
+   32  ls
+   33  exit 
+   34  ls
+   35  cd docker-k8s-23-June-2021/
+   36  ls
+   37  git pull
+   38  ls
+   39  cd 01-Docker/
+   40  ls
+   41  cd 00-Setup/
+   42  ls
+   43  cd 
+   44  ls
+   45  docker images 
+   46  docker ps 
+   47  docker container ;s 
+   48  docker container ls
+   49  docker ps 
+   50  docker container ls
+   51  docker images 
+   52  docker run busybox echo "Welcome to Docker Containers"
+   53  docker images 
+   54  docker ps 
+   55  docker ps -a
+   56  docker run busybox echo "Hello World"
+   57  docker ps
+   58  docker ps -a 
+   59  docker run busybox --name test-1 echo "Hello World"
+   60  docker run --name test-2 busybox echo "Hello World"
+   61  docker ps 
+   62  docker ps -a
+   63  docker run --name test-3 ubuntu echo "Hello World"
+   64  docker images 
+   65  ls
+   66  history 
+   67  ls
+   68  cd docker-k8s-23-June-2021/
+   69  ls
+   70  git rm hello.txt 
+   71  history > Day1_History.txt
