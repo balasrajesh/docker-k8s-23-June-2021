@@ -148,3 +148,98 @@
   148  cd docker-k8s-23-June-2021/
   149  ls
   150  history > Day1_History.txt 
+  151  ls
+  152  git add . ; git commit -m "Day1_History.txt" ; git push 
+  153  docker exec -it 8046442397ab vim hello.txt
+  154  docker exec -it 8046442397ab vi hello.txt
+  155  docker exec -it 8046442397ab date >> hello.txt
+  156  ls
+  157  cat hello.txt 
+  158  rm -rf 
+  159  docker exec -it 8046442397ab 'date >> hello.txt'
+  160  docker exec -it 8046442397ab `date`
+  161  docker exec -it 8046442397ab 'date'
+  162  docker exec -it 8046442397ab 'date > a.txt'
+  163  docker exec -it 8046442397ab "date > a.txt"
+  164  docker exec -it 8046442397abls
+  165  docker exec -it 8046442397ab bach -c  "date > a.txt"
+  166  docker exec -it 8046442397ab bach -c  'date > a.txt'
+  167  docker exec -it 8046442397ab bach -c  'date; ls -ltr'
+  168  docker exec -it 8046442397ab bash -c  'date; ls -ltr'
+  169  docker exec -it 8046442397ab bash -c  "date > a.txt"
+  170  ls
+  171  docker exec -it 8046442397ab bach -c  'date; ls -ltr'
+  172  docker exec -it 8046442397ab bash -c  "date > a.txt"
+  173  docker exec -it 8046442397ab bash -c  "ls -ltr ; cat a.txt"
+  174  docker exec -it 8046442397ab bash -c  'vim hello.txt'
+  175  docker exec -it 8046442397ab bash -c  'vi hello.txt'
+  176  docker exec -it 8046442397ab bash -c vi  'hello.txt'
+  177  ls
+  178  mkdir 01-Docker/01-Dockerfile/apache -p 
+  179  ls
+  180  cd 01-Docker/01-Dockerfile/apache/
+  181  ls
+  182  vim Dockerfile
+  183  ls
+  184  docker run -it ubuntu:16.04
+  185  docker ps 
+  186  docker inspect 4b369646955d
+  187  curl "172.17.0.7"
+  188  ls
+  189  docker ps 
+  190  docker kill 4b369646955d
+  191  docker rm 4b369646955d
+  192  docker ps -a
+  193  ls
+  194  cat Dockerfile 
+  195  docker build -t "web" . 
+  196  docker images 
+  197  ls
+  198  docker images 
+  199  docker tag web mywebapp 
+  200  docker images 
+  201  docker run -d --name web-test-1 mywebapp 
+  202  docker ps 
+  203  docker inspect web-test-1
+  204  curl "172.17.0.7"
+  205  curl "172.17.0.8"
+  206  docker run -d --name web-test-2 mywebapp 
+  207  docker run -d --name web-test-3 mywebapp 
+  208  docker run -d --name web-test-4 mywebapp 
+  209  docker run -d --name web-test-5 mywebapp 
+  210  docker ps 
+  211  curl "172.17.0.8"
+  212  curl "172.17.0.9"
+  213  curl "172.17.0.10"
+  214  curl "172.17.0.11"
+  215  curl "172.17.0.12"
+  216  ls
+  217  docker images 
+  218  docker tag mywebapp:latest mywebapp:v1 
+  219  docker images 
+  220  ls
+  221  cat Dockerfile 
+  222  vim index.html
+  223  ls
+  224  vim Dockerfile 
+  225  docker build -t mywebapp:v1 . 
+  226  docker images 
+  227  docker tag mywebapp:v1 mywebapp:v2
+  228  docker images 
+  229  docker tag mywebapp:latest mywebapp:v1
+  230  docker images 
+  231  docker run -d --name web-test-6 mywebapp:v2 
+  232  docker run -d --name web-test-7 mywebapp:v2 
+  233  docker ps 
+  234  curl "172.17.0.11"
+  235  curl "172.17.0.12"
+  236  curl "172.17.0.13"
+  237  curl "172.17.0.14"
+  238  ls
+  239  cd ..
+  240  ls
+  241  cd ..
+  242  ls
+  243  cd ..
+  244  ls
+  245  history > Day1_History.txt 
