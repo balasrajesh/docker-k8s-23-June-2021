@@ -32,40 +32,18 @@
    32  ls
    33  exit 
    34  ls
-   35  cd docker-k8s-23-June-2021/
-   36  ls
-   37  git pull
-   38  ls
-   39  cd 01-Docker/
-   40  ls
-   41  cd 00-Setup/
-   42  ls
-   43  cd 
-   44  ls
-   45  docker images 
-   46  docker ps 
-   47  docker container ;s 
-   48  docker container ls
-   49  docker ps 
-   50  docker container ls
-   51  docker images 
-   52  docker run busybox echo "Welcome to Docker Containers"
-   53  docker images 
-   54  docker ps 
-   55  docker ps -a
-   56  docker run busybox echo "Hello World"
-   57  docker ps
-   58  docker ps -a 
-   59  docker run busybox --name test-1 echo "Hello World"
-   60  docker run --name test-2 busybox echo "Hello World"
-   61  docker ps 
-   62  docker ps -a
-   63  docker run --name test-3 ubuntu echo "Hello World"
-   64  docker images 
-   65  ls
-   66  history 
-   67  ls
-   68  cd docker-k8s-23-June-2021/
-   69  ls
-   70  git rm hello.txt 
-   71  history > Day1_History.txt
+   35  history 
+   36  docker ps 
+   37  docker ps -a
+   38  docker images 
+   39  docker pull centos
+   40  docker images 
+   41  docker pull amitvashist7/python-webapp:v1
+   42  docker images 
+   43  docker pull amitvashist7/apache-ex4
+   44  docker login 
+   45  docker pull amitvashist7/apache-ex4
+   46  ls
+   47  cd docker-k8s-23-June-2021/
+   48  ls
+   49  history > Day1_History.txt 
