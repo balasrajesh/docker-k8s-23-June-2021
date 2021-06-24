@@ -234,3 +234,40 @@
   234  ls
   235  history 
   236  history > Day2_History.txt 
+  237  git add . ; git commit -m "Docker"; git push 
+  238  history 
+  239  ls
+  240  docker events 
+  241  docker events --since '2021-06-23'
+  242  docker events --since '2021-06-24T09:35:39.929752058Z image pull alpine:latest (name=alpine)'
+  243  docker events --since '2021-06-24T09:35:39'
+  244  docker events --since '10m'
+  245  docker events --since '2021-06-24T09:35:39' --until '2021-06-24T09:37:39'
+  246  docker events --filter 'event=stop'
+  247  docker events --filter 'container=test'
+  248  docker events --filter 'container=amit'
+  249  docker events --filter 'type=network'
+  250  docker events --filter 'type=volume'
+  251  docker events --format '{{json.}}'
+  252  docker events --format '{{json}}'
+  253  docker events --format --help
+  254  docker events --format '{{.json}}'
+  255  docker events --format 
+  256  docker events --help
+  257  docker events --format json
+  258  docker events --format {{json}}
+  259  docker events --format "{{json}}"
+  260  docker events --format '{{json}}'
+  261  docker events --format '{{json,}}'
+  262  docker events --format '{{json.}}'
+  263  docker events --format '{{json .}}'
+  264  ls
+  265  docker events --format '{{json .}}'
+  266  ls
+  267  docker [s 
+  268  docker ps 
+  269  docker logs 9b0e9e870b0c
+  270  docker logs -f  9b0e9e870b0c
+  271  docker logs -f  logserver2
+  272  ls
+  273  history > Day2_History.txt 
