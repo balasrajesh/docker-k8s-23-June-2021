@@ -271,3 +271,62 @@
   271  docker logs -f  logserver2
   272  ls
   273  history > Day2_History.txt 
+  274  git add . ; git commit -m "Docker"; git push 
+  275  ls
+  276  docker ps 
+  277  ls
+  278  docker ps 
+  279  docker images 
+  280  docker save amitvashist7/mywebapp-test:v4 > mywebapp-v4.tar 
+  281  docker save ubuntu:16.04 > ubunutu-16.04.tar 
+  282  du -sh * 
+  283  mv *.tar /root/
+  284  ls
+  285  docker ps -a 
+  286  docker kill $(docker ps -aq) 
+  287  docker rm $(docker ps -aq) 
+  288  ks
+  289  docker rmi $(docker images -q) 
+  290  docker images 
+  291  docker rmi $(docker images -q) --force
+  292  docker images 
+  293  ls
+  294  docker ps 
+  295  cd 
+  296  ls
+  297  docker pull busybox 
+  298  docker save --output busybox.tar busybox
+  299  ls
+  300  docker rmi busybox
+  301  docker images 
+  302  ls
+  303  docker load  < mywebapp-v4.tar
+  304  docker images 
+  305  docker run -d --name test -P amitvashist7/mywebapp-test:v4 
+  306  docker ps 
+  307  curl localhost:32774
+  308  ls
+  309  docker save --input busybox.tar
+  310  docker load --input busybox.tar
+  311  docker ps 
+  312  docker images 
+  313  docker load --input ubunutu-16.04.tar 
+  314  docker images 
+  315  ls
+  316  cd docker-k8s-23-June-2021/
+  317  ls
+  318  history > Day2_History.txt 
+  319  docker run -it --name test-apache ubuntu:16.04
+  320  docker ps 
+  321  docker commit -p -m "MyApache test1" test-apache test-apache:v1
+  322  docker images 
+  323  docker run -it --name test-apache2 test-apache:v1
+  324  docker ps 
+  325  docker commit -p -m "MyApache test2" test-apache2 test-apache:v2
+  326  docker images 
+  327  docker run -itd --name test-apache3 test-apache:v2
+  328  docker ps 
+  329  docker logs test-apache3
+  330  curl 172.17.0.5
+  331  ls
+  332  history > Day2_History.txt 
