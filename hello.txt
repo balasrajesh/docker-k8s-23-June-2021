@@ -1,1 +1,54 @@
 Wed Jun 23 10:21:28 UTC 2021
+3a8a453846e6
+    1  ls
+    2  vim Day2_History.txt 
+    3  ls
+    4  git add . ; git commit -m "Docker"; git push 
+    5  ls
+    6  docker images 
+    7  docker history amitvashist7/mywebapp-test:v2
+    8  ls
+    9  history 
+   10  docker volume ls 
+   11  docker images 
+   12  docker run -it -v /var/www/html/amitvashist --name test-vol1 ubuntu:16.04 /bin/bash
+   13  docker volume ls 
+   14  docker volume inspect fd531b766058587381cad0d94ffe7f3b01ffefeb6c027654957e3552c4bd3506
+   15  docker ps 
+   16  docker inspect test-vol1 | grep -i "fd531b766058587381cad0d94ffe7f3b01ffefeb6c027654957e3552c4bd3506"
+   17  docker inspect test-vol1 | grep -A10 "fd531b766058587381cad0d94ffe7f3b01ffefeb6c027654957e3552c4bd3506"
+   18  cd "/var/lib/docker/volumes/fd531b766058587381cad0d94ffe7f3b01ffefeb6c027654957e3552c4bd3506/_data"
+   19  ls
+   20  cat hello 
+   21  hostname
+   22  hostname >> hello 
+   23  date >> hello 
+   24  cat hello 
+   25  cd 
+   26  ls
+   27  docker ps 
+   28  docker attach a57a746c69ca
+   29  ls
+   30  docker ps 
+   31  docker ps -a 
+   32  docker ps -aq
+   33  docker rm $(docker ps -aq)
+   34  docker ps -a
+   35  docker volume ls 
+   36  cd - 
+   37  ls
+   38  cat hello 
+   39  cd 
+   40  ls
+   41  docker volume ls 
+   42  docker volume rm fd531b766058587381cad0d94ffe7f3b01ffefeb6c027654957e3552c4bd3506
+   43  docker volume ls 
+   44  cd - 
+   45  ls
+   46  cd docker-k8s-23-June-2021/
+   47  ls
+   48  pwd
+   49  docker run -it -v /root/docker-k8s-23-June-2021:/var/www/html/amitvashist --name test-vol2 ubuntu:16.04 /bin/bash
+   50  docker run -it -v /root/docker-k8s-23-June-2021:/var/www/html/amitvashist:ro --name test-vol3 ubuntu:16.04 /bin/bash
+   51  ls
+   52  history >> hello.txt 
