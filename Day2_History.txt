@@ -172,3 +172,65 @@
   172  cd ..
   173  ls
   174  history > Day2_History.txt 
+  175  git add . ; git commit -m "Docker"; git push 
+  176  docker ps -a 
+  177  docker kill $(docker ps -aq )
+  178  docker ps 
+  179  docker ps -a 
+  180  docker rm $(docker ps -aq)  
+  181  docker run -d --name test-net-1  amitvashist7/mywebapp-test:v1
+  182  docker ps 
+  183  docker inspect 5b9aa81d0417
+  184  curl 172.17.0.2
+  185  curl localhost
+  186  ip addr 
+  187  curl 172.31.12.63
+  188  netstat -tulnp 
+  189  docker run -d --name test-net-2 -p 8080:80  amitvashist7/mywebapp-test:v1
+  190  netstat -tulnp 
+  191  docker run -d --name test-net-3 -p 80:80  amitvashist7/mywebapp-test:v1
+  192  docker ps 
+  193  curl 172.17.0.4
+  194  curl localhost
+  195  curl localhost:8080
+  196  curl 172.31.12.63
+  197  ls
+  198  cat Day2_History.txt 
+  199  git add . ; git commit -m "Docker"; git push 
+  200  ls
+  201  docker ps 
+  202  docker kill $(docker ps -qa) 
+  203  ls
+  204  docker network ls 
+  205  docker run -d --name test-net-1   amitvashist7/mywebapp-test:v1
+  206  docker rm $(docker ps -qa) 
+  207  docker run -d --name test-net-1   amitvashist7/mywebapp-test:v1
+  208  docker network ls 
+  209  docker run -d --name test-net-2 --network host   amitvashist7/mywebapp-test:v1
+  210  docker run -d --name test-net-3 --network none   amitvashist7/mywebapp-test:v1
+  211  docker ps 
+  212  docker exec -it test-net-1 ip addr 
+  213  docker exec -it test-net-1 ip link 
+  214  docker exec -it test-net-1 ip addr 
+  215  docker exec -it test-net-2 ip addr 
+  216  ip addr 
+  217  docker exec -it test-net-3 ip addr 
+  218  docker network ls 
+  219  docker network inspect bridge
+  220  docker network create --driver=bridge --subnet=172.28.0.0/16 --ip-range=172.28.5.0/24 --gateway=172.28.5.254
+  221  docker network create --driver=bridge --subnet=172.28.0.0/16 --ip-range=172.28.5.0/24 --gateway=172.28.5.254 mybr0
+  222  docker network ls 
+  223  docker network inspect mybr0
+  224  docker run -d --name test-net-4 --network "mybr0"  amitvashist7/mywebapp-test:v1
+  225  docker run -d --name test-net-5 --network "mybr0"  amitvashist7/mywebapp-test:v1
+  226  docker ps 
+  227  docker exec -it test-net-1 ip addr 
+  228  docker exec -it test-net-4 ip addr
+  229  docker exec -it test-net-5 ip addr
+  230  curl 172.28.5.1
+  231  docker run -d --name test-net-6 --network "mybr0" -P  amitvashist7/mywebapp-test:v3
+  232  docker ps 
+  233  docker exec -it test-net-6 ip addr
+  234  ls
+  235  history 
+  236  history > Day2_History.txt 
