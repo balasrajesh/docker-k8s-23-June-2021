@@ -57,3 +57,118 @@
    57  docker run -it  --volumes-from test-vol3 --name test-vol4 ubuntu:16.04 /bin/bash
    58  ls
    59  history > Day2_History.txt 
+   60  ls
+   61  cat Day2_History.txt 
+   62  ls
+   63  git add . ; git commit -m "Docker"; git push 
+   64  docker ps 
+   65  docker inspect 6c83b9f94fa5
+   66  docker run -itd  -v /test --name test-vol5 ubuntu:16.04 /bin/bash
+   67  docker run -itd  -v /test:ro --name test-vol6 ubuntu:16.04 /bin/bash
+   68  docker inspect test-vol5
+   69  docker ps 
+   70  docker inspect test-vol2
+   71  ls
+   72  docker ps 
+   73  docker kill $(docker ps -qa) 
+   74  ls
+   75  docker ps 
+   76  docker ps -a
+   77  docker rm $(docker ps -qa) 
+   78  ls
+   79  ip addr
+   80  docker network ls 
+   81  docker network inspect 60dc2856a953
+   82  ls
+   83  docker images 
+   84  docker run -d --name test-net-1 amitvashist7/mywebapp-test:v2
+   85  docker ps 
+   86  docker inspect c14b3205bd3c
+   87  docker network inspect 60dc2856a953
+   88  docker run -d --name test-net-2 amitvashist7/mywebapp-test:v2
+   89  docker network inspect 60dc2856a953
+   90  docker run -d --name test-net-3 amitvashist7/mywebapp-test:v2
+   91  docker run -d --name test-net-4 amitvashist7/mywebapp-test:v2
+   92  docker network inspect 60dc2856a953
+   93  docker stop "test-net-3"
+   94  docker network inspect 60dc2856a953
+   95  docker run -d --name test-net-5 amitvashist7/mywebapp-test:v2
+   96  docker network inspect 60dc2856a953
+   97  docker start "test-net-3"
+   98  docker network inspect 60dc2856a953
+   99  docker ps 
+  100  docker kill $(docker ps -qa) 
+  101  docker network inspect 60dc2856a953
+  102  docker start "test-net-1"
+  103  ls
+  104  docker ps 
+  105  docker inspect c14b3205bd3c
+  106  curl  -vvv telnet://172.17.0.2:90
+  107  curl  -vvv telnet://172.17.0.2:80
+  108  docker ps 
+  109  ls
+  110  cd 01-Docker/01-Dockerfile/apache/
+  111  ls
+  112  vim index.html 
+  113  ls
+  114  vim Dockerfile 
+  115  ls
+  116  docker images 
+  117  docker build -t "amitvashist7/mywebapp-test:v3" .
+  118  ls
+  119  docker ps 
+  120  docker images 
+  121  docker run -d --name test-net-6 amitvashist7/mywebapp-test:v3
+  122  docker ps 
+  123  docker inspect 21d0b24d2aa9
+  124  curl  -vvv telnet://172.17.0.3:80
+  125  curl  -vvv telnet://172.17.0.3:8081
+  126  curl  172.17.0.3
+  127  curl  172.17.0.2
+  128  docker ps 
+  129  docker exec -it 21d0b24d2aa9 ip addr 
+  130  docker exec -it c14b3205bd3c ip addr 
+  131  ls
+  132  docker ps 
+  133  curl  172.17.0.2
+  134  curl  172.17.0.3
+  135  netstat -tulnp 
+  136  docker run -d --name test-net-7 -p 8080:80 amitvashist7/mywebapp-test:v3
+  137  docker ps 
+  138  curl localhost
+  139  curl localhost:8080
+  140  netstat -tulnp 
+  141  systemctl status docker
+  142* 
+  143  pwd
+  144  docker run -d --name test-net-8 -p 8080:80 amitvashist7/mywebapp-test:v3
+  145  docker run -d --name test-net-8 -p 8081:80 amitvashist7/mywebapp-test:v3
+  146  docker run -d --name test-net-9 -p 8081:80 amitvashist7/mywebapp-test:v3
+  147  docker run -d --name test-net-10 -p 8082:80 amitvashist7/mywebapp-test:v2
+  148  docker run -d --name test-net-11 -p 8083:80 amitvashist7/mywebapp-test:v1
+  149  docker ps 
+  150  netstat -tulnp 
+  151  docker run -d --name test-net-12 -P amitvashist7/mywebapp-test:v1
+  152  docker run -d --name test-net-13 -P amitvashist7/mywebapp-test:v1
+  153  docker ps 
+  154  docker run -d --name test-net-14 -P amitvashist7/mywebapp-test:v3
+  155  docker run -d --name test-net-15 -P amitvashist7/mywebapp-test:v3
+  156  docker ps 
+  157  ls
+  158  vim Dockerfile 
+  159  docker build -t "amitvashist7/mywebapp-test:v4" .
+  160  docker run -d --name test-net-16 -P amitvashist7/mywebapp-test:v4
+  161  
+  162  docker run -d --name test-net-17  amitvashist7/mywebapp-test:v4
+  163  netstat -tulnp 
+  164  docker run -d --name test-net-18 -p 80:80  amitvashist7/mywebapp-test:v4
+  165  docker ps 
+  166  docker run -d --name test-net-19 -p 80:80  amitvashist7/mywebapp-test:v4
+  167  ls
+  168  cd ..
+  169  ls
+  170  cd ..
+  171  ls
+  172  cd ..
+  173  ls
+  174  history > Day2_History.txt 
