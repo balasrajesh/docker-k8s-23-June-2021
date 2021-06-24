@@ -330,3 +330,102 @@
   330  curl 172.17.0.5
   331  ls
   332  history > Day2_History.txt 
+  333  git add . ; git commit -m "Docker"; git push 
+  334  sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  335  chmod +x /usr/local/bin/docker-compose 
+  336  docker-compose version 
+  337  ls
+  338  docker images 
+  339  ls
+  340  cd 01-Docker/
+  341  ls
+  342  mkdir 02-DockerCompose 
+  343  ls
+  344  cd 02-DockerCompose/
+  345  sl
+  346  ls
+  347  mkdir apache 
+  348  ls
+  349  cd apache/
+  350  ls
+  351  vim docker-compose.yaml
+  352  ls
+  353  docker-compose up -d 
+  354  docker-compose ps 
+  355  docker ps 
+  356  ls
+  357  docker-compose stop 
+  358  docker-compose rm
+  359  ls
+  360  vim docker-compose.yaml 
+  361  docker-compose up -d 
+  362  docker-compose ps 
+  363  ls
+  364  vim docker-compose.yaml 
+  365  ls
+  366  docker-compose up -d 
+  367  docker-compose ps
+  368  ls
+  369  vim docker-compose.yaml 
+  370  docker-compose up -d 
+  371  docker-compose ps
+  372  ls
+  373  cd ..
+  374  ls
+  375  mkdir wordpress
+  376  ls
+  377  cd wordpress/
+  378  ls
+  379  vim docker-compose.yaml
+  380  ls
+  381  mkdir nginx wordpress 
+  382  vim nginx/wordpress.conf
+  383  ls
+  384  vim docker-compose.yaml 
+  385  ls
+  386  cat nginx/wordpress.conf 
+  387  cat docker-compose.yaml 
+  388  docker-compose up -d 
+  389  ls
+  390  cd wordpress/
+  391  ls
+  392  cat index.php 
+  393  cat wp-blog-header.php
+  394  ls
+  395  docker-compose ps 
+  396  docker exec -it wordpress_mysql_1 mysql -u root -p 
+  397  ls
+  398  cd ..
+  399  ls
+  400  cd db-data/
+  401  ls
+  402  cd wpdb/
+  403  ls
+  404  grep -i "amitvashist7" * 
+  405  grep -i "amitvashist" * 
+  406  grep -i "amitvashist" .
+  407  cat wp_users.ibd
+  408  xterm-256colorxterm-256color
+  409  cat wp_users.frm
+  410  xterm-256colorxterm-256colorxterm-256colorxterm-256color
+  411  grep -i amit  wp_users.frm
+  412  ls
+  413  cd ..
+  414  ls
+  415  cd ..
+  416  ls
+  417  cd logs/
+  418  ls
+  419  cd nginx/
+  420  ls
+  421  ll
+  422  tail -f hakase-access.log
+  423  cd ../../
+  424  ls
+  425  vim docker-compose.yaml 
+  426  cd 
+  427  history 
+  428  ls
+  429  cd docker-k8s-23-June-2021/
+  430  ls
+  431  history > Day2_History.txt 

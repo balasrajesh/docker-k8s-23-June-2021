@@ -1,0 +1,19 @@
+---
+
+mytest: 
+  image: amitvashist7/mywebapp-test:v1
+  volumes:
+  - /root/docker-k8s-23-June-2021/01-Docker:/var/www/html/amit
+  ports:
+  - '8081:80'
+   
+
+
+
+
+mytest-2: 
+  image: amitvashist7/mywebapp-test:v2
+  volumes:
+  - /root/docker-k8s-23-June-2021/01-Docker:/var/www/html/myapp
+  ports:
+  - '80'
