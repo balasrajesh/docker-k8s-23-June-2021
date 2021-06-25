@@ -1,0 +1,150 @@
+    1  ls
+    2  ip addr 
+    3  docker swarm init --advertise-addr 172.31.12.63
+    4  docker info 
+    5  docker network ls 
+    6  docker network inspect docker_gwbridge
+    7  docker ps 
+    8  docker ps -a
+    9  docker node ls 
+   10  git config --list 
+   11  docker node ls 
+   12  ls
+   13  cd 01-Docker/
+   14  ls
+   15  mkdir 03-Swarm
+   16  ls
+   17  cd 03-Swarm/
+   18  ls
+   19  history 
+   20  history  > README.md
+   21  vim README.md 
+   22  ls
+   23  cd ../../
+   24  git add . ; git commit -m "Docker Swarm"; git push 
+   25  ls
+   26  cd 01-Docker/03-Swarm/
+   27  ls
+   28  cat README.md 
+   29  cd ..
+   30  ls
+   31  git add . ; git commit -m "Docker Swarm"; git push 
+   32  docker node ls 
+   33  docker service ls 
+   34  docker service create --replicas 1 --name hello-swarm nginx 
+   35  docker service create --replicas 1 --name hello-swarm nginx -o yaml
+   36  docker service create --replicas 1 --name hello-swarm nginx --help
+   37  docker service ls 
+   38  docker service ls -o wide 
+   39  docker service ls --help
+   40  docker service list
+   41  docker service ls
+   42  docker service inspect hello-swarm
+   43  docker service --help
+   44  docker service ps hello-swarm
+   45  docker ps 
+   46  docker service ps hello-swarm
+   47  docker service ls 
+   48  docker service scale hello-swarm=5
+   49  docker service ls 
+   50  docker service ps
+   51  docker service ps hello-swarm
+   52  sl
+   53  ls
+   54  cd 03-Swarm/
+   55  ls
+   56  history 
+   57  vim 01-Service
+   58  ls
+   59  docker service ls 
+   60  docker service scale hello-swarm=2
+   61  docker service ls 
+   62  docker service ps hello-swarm
+   63  history 
+   64  vim 01-Service 
+   65  ls
+   66  docker service --help
+   67  docker service rm hello-swarm
+   68  cd ../
+   69  ls
+   70  git add . ; git commit -m "Docker Swarm"; git push 
+   71  lls
+   72  ls
+   73  cd ls
+   74  ls
+   75  cd 03-Swarm/
+   76  ls
+   77  mkdir 01-Service
+   78  mv 01-Service Readme.md
+   79  ls
+   80  mkdir 01-Service
+   81  mv Readme.md 01-Service/
+   82  ls
+   83  mkdir 02-Stack
+   84  cd 02-Stack/
+   85  ls
+   86  vim docker-compose.yaml
+   87  ls
+   88  docker stack deploy -c docker-compose.yaml getstarted
+   89  vim docker-compose.yaml 
+   90  ls
+   91  docker stack deploy -c docker-compose.yaml getstarted
+   92  docker stack ls 
+   93  docker stack ps 
+   94  docker stack ps getstarted
+   95  docker images 
+   96  docker ps 
+   97  docker stack ps getstarted
+   98  docker stack --help
+   99  docker services ls 
+  100  docker services 
+  101  docker services
+  102  docker services --help
+  103  docker services info 
+  104  docker service ls  
+  105  docker services info getstarted_web
+  106  docker services container 
+  107  docker services container --help
+  108  docker services container ks
+  109  docker services container ls
+  110  docker stack ps getstarted
+  111  ls
+  112  cd ..
+  113  ls
+  114  mv 02-Stack 02-First-Demo
+  115  mkdir 03-Visualizer
+  116  ls
+  117  cd 03-Visualizer/
+  118  ls
+  119  vim docker-compose.yaml
+  120  docker stack deploy -c docker-compose.yaml myappdemo-visual
+  121  vim docker-compose.yaml 
+  122  docker stack deploy -c docker-compose.yaml myappdemo-visual
+  123  vim docker-compose.yaml 
+  124  docker stack deploy -c docker-compose.yaml myappdemo-visual
+  125  docker stack ls 
+  126  docker service ls 
+  127  cat docker-compose.yaml 
+  128  docker service ls 
+  129* docker service getstarted_web 
+  130  docker service  scale=1 getstarted_web
+  131  docker service scale getstarted_web=1
+  132  docker service ls 
+  133  docker service --help
+  134  docker service update --help
+  135  docker service ls 
+  136  docker service update getstarted_web --image=amitvashist7/k8s-tiny-web
+  137  docker service ls 
+  138  docker service scale getstarted_web=10
+  139  docker service ls 
+  140  docker service ps getstarted_web
+  141  docker service update getstarted_web --image=amitvashist7/k8s-tiny-web:2
+  142  docker service ps getstarted_web
+  143  docker service update getstarted_web --image=amitvashist7/k8s-tiny-web:3
+  144  docker service ps getstarted_web
+  145  docker service update getstarted_web --image=amitvashist7/k8s-tiny-web:4
+  146  docker service update getstarted_web --image=amitvashist7/k8s-tiny-web
+  147  ls
+  148  cd ..
+  149  ls
+  150  history > Day3_History.txt
