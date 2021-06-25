@@ -223,3 +223,47 @@
   223  docker service ls 
   224  ls
   225  history > Day3_History.txt 
+  226  cd ../../
+  227  ls
+  228  git add . ; git commit -m "Docker Swarm"; git push 
+  229  docker node ls 
+  230  docker node --help
+  231  docker node inspect t2eft2lfqljbxq419wcn7iq4t
+  232  docker node --help
+  233  docker node ps 
+  234  docker node ls
+  235  docker node ls --show-label
+  236  docker node ls --help
+  237  ls
+  238  docker service ls
+  239  docker service create --name my_web_3 --replicas 3 --publish published=8006,target=80 amitvashist7/mywebapp-test:v2
+  240  docker service ls
+  241  docker service ps my_web_3
+  242  docker service inspect my_web_3
+  243  docker service inspect my_web_3 --pretty 
+  244  docker node ls 
+  245  docker node inspect eti1vn4x29hp5nzllotr6ceuq --pretty
+  246  docker node inspect self  --pretty
+  247  docker node update --label-add env=uat t2eft2lfqljbxq419wcn7iq4t
+  248  docker node update --label-add env=prod okecsn0bh0wb2s1vosqc6l6z5
+  249  docker node update --label-add env=prod eti1vn4x29hp5nzllotr6ceuq
+  250  docker node inspect self  --pretty
+  251  docker node inspect eti1vn4x29hp5nzllotr6ceuq --pretty
+  252  docker node inspect t2eft2lfqljbxq419wcn7iq4t --pretty
+  253  history 
+  254  docker service create --name my_web_3 --replicas 3 --publish published=8006,target=80 amitvashist7/mywebapp-test:v2
+  255  docker service create --name my_web_4 --replicas 3 --publish published=8007,target=80 --constraint node.labels.env==uat amitvashist7/mywebapp-test:v2
+  256  docker service ls 
+  257  docker service ps my_web_4
+  258  docker service create --name my_web_5 --replicas 3 --publish published=8009,target=80 --constraint node.labels.env==prod amitvashist7/mywebapp-test:v2
+  259  docker service ls 
+  260  docker service ps my_web_4
+  261  docker service ps my_web_3
+  262  docker service ps my_web_4
+  263  docker service ps my_web_5
+  264  ls
+  265  cd 01-Docker/
+  266  ls
+  267  cd 03-Swarm/
+  268  ls
+  269  history > Day3_History.txt 
