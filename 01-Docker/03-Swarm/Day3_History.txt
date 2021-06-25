@@ -267,3 +267,33 @@
   267  cd 03-Swarm/
   268  ls
   269  history > Day3_History.txt 
+  270  cd ../../
+  271  git add . ; git commit -m "Docker Swarm"; git push 
+  272  ls
+  273  docker service ls 
+  274  docker service scale my_web_4=10
+  275  docker service scale my_web_4=20
+  276  docker service ps  my_web_4
+  277  docker service scale my_web_4=2
+  278  docker service ps  my_web_4
+  279  docker service scale my_web_4=20
+  280  docker service update my_web_4 --image=amitvashist7/k8s-tiny-web
+  281  docker service scale my_web_4=10
+  282  docker service scale my_web_4=5
+  283  docker node update --label-add env=uat eti1vn4x29hp5nzllotr6ceuq
+  284  docker service scale my_web_4=10
+  285  docker service scale my_web_4=5
+  286  docker service update my_web_4 --image=amitvashist7/k8s-tiny-web:2
+  287  docker service update my_web_4 --image=amitvashist7/k8s-tiny-web:3
+  288  docker service inspect my_web_4
+  289  docker service inspect my_web_4 --pretty 
+  290  docker service update --rollback --update-deploy 0s  my_web_4 
+  291  docker service update --rollback --update-delay 0s  my_web_4 
+  292  ls
+  293  cd 01-Docker/
+  294  ls
+  295  03-Swarm/
+  296  ls
+  297  cd 03-Swarm/
+  298  ls
+  299  history > Day3_History.txt 
