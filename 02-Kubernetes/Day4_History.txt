@@ -1,0 +1,24 @@
+    1  git clone https://github.com/amitvashisttech/docker-k8s-23-June-2021.git
+    2  ls
+    3  cd docker-k8s-23-June-2021/
+    4  ls
+    5  cd 02-Kubernetes/
+    6  ls
+    7  cd 00-Setup/
+    8  ls
+    9  ip addr 
+   10  ls
+   11  vim install-k8s-master-node.sh 
+   12  ls
+   13  ./install-k8s-master-node.sh 
+   14  kubectl get nodes 
+   15  mkdir -p $HOME/.kube
+   16  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+   17  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+   18  kubectl get nodes 
+   19  watch -n .5 kubectl get nodes 
+   20  kubectl get nodes 
+   21  ls
+   22  cd ..
+   23  ls
+   24  history > Day4_History.txt
