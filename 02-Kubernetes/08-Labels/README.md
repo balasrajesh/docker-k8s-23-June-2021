@@ -1,3 +1,5 @@
+
+```
   374  kubectl get pods --show-labels
   378  kubectl get pods --show-labels
   382  kubectl get pods --show-labels
@@ -21,3 +23,4 @@
   575  cd 08-Labels/
   577  history | grep -i label
   578  history | grep -i label > README.md
+```
