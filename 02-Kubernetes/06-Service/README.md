@@ -1,4 +1,6 @@
+```
   233  cd 06-Service/
+
   234  ls
   235  kubectl get deploy,svc 
   236  kubectl delete deploy helloworld-2-deployment
@@ -49,3 +51,4 @@
   281  ls
   282  history 
   283  history  > README.md 
+```
