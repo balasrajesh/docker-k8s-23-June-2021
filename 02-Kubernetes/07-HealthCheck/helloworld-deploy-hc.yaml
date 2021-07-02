@@ -22,7 +22,7 @@ spec:
           containerPort: 80
         livenessProbe:
           httpGet:
-            path: /antarip
+            path: /
             port: nodejs-port
           initialDelaySeconds: 15
           timeoutSeconds: 30
