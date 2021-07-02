@@ -1,3 +1,4 @@
+```
   721  cd 12-Service-Discovery/
   722  ls
   723  cat secrets.yml 
@@ -25,3 +26,4 @@
   745  ls
   746  history 
   747  history > README.md
+```
