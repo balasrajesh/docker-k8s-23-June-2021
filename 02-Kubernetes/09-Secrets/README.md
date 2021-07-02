@@ -1,5 +1,6 @@
+```
+
   586  mkdir 09-Secrets
-  587  ls
   588  cd 09-Secrets/
   589  ls
   590  echo  -n "AmitVashist" | base64
@@ -52,3 +53,4 @@
   637  vim 02-Kubernetes/09-Secrets/README.md 
   638  ls
   639  history >  02-Kubernetes/09-Secrets/README.md 
+```
