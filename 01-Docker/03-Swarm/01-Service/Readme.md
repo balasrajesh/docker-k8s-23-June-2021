@@ -1,4 +1,5 @@
-   32  docker node ls
+  ```
+  32  docker node ls
    33  docker service ls
    34  docker service create --replicas 1 --name hello-swarm nginx
    35  docker service create --replicas 1 --name hello-swarm nginx -o yaml
@@ -25,3 +26,4 @@
    61  docker service ls
    62  docker service ps hello-swarm
 
+```
